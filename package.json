@@ -103,6 +103,23 @@
         {
           "command": "extension.mock-debug.toggleFormatting",
           "when": "debugType == 'mock' && debugProtocolVariableMenuContext == 'simple'"
+        },
+        {
+          "command": "extension.mock-debug.sayVariableContextMenu",
+          "when": "inDebugMode && debugType == 'mock' && debugState == stopped",
+          "group": "navigation"
+        }
+      ],
+      "debug/toolBar": [
+        {
+          "command": "extension.mock-debug.sayHello",
+          "group": "navigation",
+          "when": "debugType == 'mock'"
+        },
+        {
+          "command": "extension.mock-debug.sayHello2",
+          "group": "navigation",
+          "when": "debugType == 'mock'"
         }
       ]
     },
@@ -124,6 +141,19 @@
       {
         "command": "extension.mock-debug.toggleFormatting",
         "title": "Toggle between decimal and hex formatting"
+      },
+      {
+        "command": "extension.mock-debug.sayHello",
+        "title": "Say Hello",
+        "icon": "$(heart)"
+      },
+      {
+        "command": "extension.mock-debug.sayHello2",
+        "title": "Say Hello2"
+      },
+      {
+        "command": "extension.mock-debug.sayVariableContextMenu",
+        "title": "Say Variable Context Menu"
       }
     ],
     "breakpoints": [

@@ -51,6 +51,15 @@ export function activateMockDebug(context: vscode.ExtensionContext, factory?: vs
 			if (ds) {
 				ds.customRequest('toggleFormatting');
 			}
+		}),
+		vscode.commands.registerCommand('extension.mock-debug.sayHello', (variable) => {
+			vscode.window.showInformationMessage('Hello');
+		}),
+		vscode.commands.registerCommand('extension.mock-debug.sayHello2', (variable) => {
+			vscode.window.showInformationMessage('Hello2');
+		}),
+		vscode.commands.registerCommand('extension.mock-debug.sayVariableContextMenu', (variable) => {
+			vscode.window.showInformationMessage('Variable Context Menu');
 		})
 	);
 

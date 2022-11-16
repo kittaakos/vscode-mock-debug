@@ -63,7 +63,7 @@ To make the debugger stop when an exception is thrown, two "exception options" e
 
 ## Output events
 
-* If a line containes patterns like `log(xxx)`, `prio(xxx)`, `out(xxx)`, or `err(xxx)` the argument `xxx` is shown in the debug console as follows:
+* If a line contains patterns like `log(xxx)`, `prio(xxx)`, `out(xxx)`, or `err(xxx)` the argument `xxx` is shown in the debug console as follows:
   * **log**: text is shown in debug console's default color to indicate that it is received from the debugger itself
   * **prio**: text is shown as a notification to indicate that it is received from the debugger itself and has high priority
   * **out**: text is shown in blue to indicate program output received from "stdout"
